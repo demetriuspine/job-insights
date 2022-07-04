@@ -60,7 +60,7 @@ def get_unique_industries(path):
         List of unique industries
     """
     raw_jobs = read(path)
-    industries_list = list()
+    industries_list = []
 
     for job in raw_jobs:
         industry = job["industry"].strip()
